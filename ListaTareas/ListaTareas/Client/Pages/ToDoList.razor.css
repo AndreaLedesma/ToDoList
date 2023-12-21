@@ -1,0 +1,70 @@
+﻿.card.main {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    max-width: 90%;
+    min-width: 90%;
+    background: #FAF3F0;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    border-radius: 1rem;
+}
+.card-body {
+
+}
+
+.card-title {
+    color: #756AB6;
+    font-family: var(--font-GochiHand);
+    font-size: 2.5rem;
+}
+
+.form-control:focus, .form-check-input:focus
+{
+    box-shadow: none;
+}
+.form-control {
+    background: transparent;
+    border: solid 3px transparent;
+    border-bottom: 3px solid #D4E2D4;
+}
+
+    .form-control:focus {
+        border: solid 3px transparent;
+        border-bottom: dashed 4px #D4E2D4;
+    }
+.form-check-input:checked {
+    background-color: #AC87C5;
+    border-color: #DBC4F0;
+}
+.form-check-input:focus {
+    border-color: #DBC4F0;
+}
+
+    .form-check-label:focus {
+        text-decoration: line-through wavy #FFCACC;
+    }
+
+    .btn {
+    background: #E0AED0;
+    border: none;
+}
+
+    .btn:focus {
+        box-shadow: 0 0 0 0.1rem #FFCACC, 0 0 0 0.25rem #756AB6;
+    }
+
+.contenedor-tarea {
+    color: #A7727D;
+}
+
+.titulo-tarea {
+    color: #AC87C5;
+    font-weight: 700;
+}
+
+.estado-tarea {
+    background: #FF8F8F;
+}
+.estado-tarea.completa {
+    background: #89B9AD;
+}

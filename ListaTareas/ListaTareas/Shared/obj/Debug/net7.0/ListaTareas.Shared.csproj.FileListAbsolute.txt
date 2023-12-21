@@ -1,0 +1,12 @@
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\bin\Debug\net7.0\ListaTareas.Shared.deps.json
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\bin\Debug\net7.0\ListaTareas.Shared.dll
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\bin\Debug\net7.0\ListaTareas.Shared.pdb
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.AssemblyInfoInputs.cache
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.AssemblyInfo.cs
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.sourcelink.json
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.dll
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\refint\ListaTareas.Shared.dll
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.pdb
+C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ref\ListaTareas.Shared.dll

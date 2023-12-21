@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ListaTareas.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+358663495e76554a76a27945ea65a67ffedb0fc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ListaTareas.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ListaTareas.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

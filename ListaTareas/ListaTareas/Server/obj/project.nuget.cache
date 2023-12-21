@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1pC7THvlYEFmnAJeuDQOkz3UdYPryIZ8AhmfNjMSh6pdCp5aB416f1I6tE0+Z5rrIQ2HXmbCE9eBJvXqCqXAwQ==",
+  "dgSpecHash": "HIFi3r6s1Uf/dXB1WDl8zOOwQt2sBkQXWGkgNX8vArc048Fq3BPVWHUzAUsPciCJ9Ge1/qflI7CzoltqLBNjAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Desarrollo31\\Documents\\PruebaAndrea\\ListaTareas\\ListaTareas\\ListaTareas\\Server\\ListaTareas.Server.csproj",
+  "projectFilePath": "C:\\Users\\Desarrollo31\\Documents\\PruebaAndrea\\ListaTareas\\ListaTareas\\Server\\ListaTareas.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Desarrollo31\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.13\\microsoft.aspnetcore.authorization.7.0.13.nupkg.sha512",
     "C:\\Users\\Desarrollo31\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.13\\microsoft.aspnetcore.components.7.0.13.nupkg.sha512",

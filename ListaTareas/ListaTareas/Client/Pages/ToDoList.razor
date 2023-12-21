@@ -1,0 +1,38 @@
+﻿@page "/"
+
+<div class="card main" >
+  <div class="card-body">
+    <h5 class="card-title mb-4">Lista de tareas</h5>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-4 ">
+                    <label for="exampleInputEmail1" class="form-label">Título</label>
+                    <input type="text" class="form-control me-4" id="exampleInputPassword1">
+                </div>
+                <div class="mb-4 ">
+                    <label for="exampleInputEmail1" class="form-label">Fecha vencimiento</label>
+                    <input type="date" class="form-control me-4" id="exampleInputPassword1">
+                </div>
+                <div class="mb-4 ">
+                    <label for="exampleInputEmail1" class="form-label">Descripción</label>
+                    <input type="text" class="form-control me-4" id="exampleInputPassword1">
+                </div>
+                 <button type="submit" class="btn btn-primary">Añadir</button>
+
+            </div>
+            <div class="col-6">
+                <div class="contenedor-tarea align-items-start mb-2">
+                    <div class="d-flex justify-content-start">
+                        <h5 class="titulo-tarea me-3">titulo tarea</h5>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </div>                        
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Fecha vencimiento</h6>
+                    <p class="card-text">Descripción</p>
+                    <span class="estado-tarea badge rounded-pill">pendiente</span>
+                </div>
+            </div>
+        </div>
+
+
+  </div>
+</div>
