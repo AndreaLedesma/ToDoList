@@ -78,7 +78,10 @@
     /// </summary>
     private bool bEditarTarea;
 
-    string sMensajeAlerta;
+    /// <summary>
+    /// Mensajes de acciones crud
+    /// </summary>
+    string? sMensajeAlerta;
 
 
     List<Tarea>? TareasGuardadas = new List<Tarea>();
@@ -157,10 +160,5 @@
             TareasGuardadas = await _peticionHttp.ObtenerTareas();
             StateHasChanged();
         }
-    }
-
-    private async Task RecargarInformacion()
-    {
-
     }
 }

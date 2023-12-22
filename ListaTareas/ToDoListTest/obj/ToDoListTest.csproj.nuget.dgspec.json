@@ -1,0 +1,319 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ToDoListTest\\ToDoListTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Client\\ListaTareas.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Client\\ListaTareas.Client.csproj",
+        "projectName": "ListaTareas.Client",
+        "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Client\\ListaTareas.Client.csproj",
+        "packagesPath": "C:\\Users\\dell 5490\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dell 5490\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\ListaTareas.Shared.csproj": {
+                "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\ListaTareas.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Server\\ListaTareas.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Server\\ListaTareas.Server.csproj",
+        "projectName": "ListaTareas.Server",
+        "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Server\\ListaTareas.Server.csproj",
+        "packagesPath": "C:\\Users\\dell 5490\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dell 5490\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Client\\ListaTareas.Client.csproj": {
+                "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Client\\ListaTareas.Client.csproj"
+              },
+              "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\ListaTareas.Shared.csproj": {
+                "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\ListaTareas.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\ListaTareas.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\ListaTareas.Shared.csproj",
+        "projectName": "ListaTareas.Shared",
+        "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\ListaTareas.Shared.csproj",
+        "packagesPath": "C:\\Users\\dell 5490\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dell 5490\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ToDoListTest\\ToDoListTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ToDoListTest\\ToDoListTest.csproj",
+        "projectName": "ToDoListTest",
+        "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ToDoListTest\\ToDoListTest.csproj",
+        "packagesPath": "C:\\Users\\dell 5490\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ToDoListTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dell 5490\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Client\\ListaTareas.Client.csproj": {
+                "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Client\\ListaTareas.Client.csproj"
+              },
+              "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Server\\ListaTareas.Server.csproj": {
+                "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Server\\ListaTareas.Server.csproj"
+              },
+              "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\ListaTareas.Shared.csproj": {
+                "projectPath": "C:\\Users\\dell 5490\\Documents\\c# ejercicios\\ToDoList\\ListaTareas\\ListaTareas\\Shared\\ListaTareas.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

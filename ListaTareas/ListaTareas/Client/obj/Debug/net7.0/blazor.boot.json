@@ -227,14 +227,14 @@
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
       "ListaTareas.Shared.dll": "sha256-i1XJV86p0dPC7t5pdpTO\/u5yc3Ii\/Q\/XqQI5RiPBWO4=",
-      "ListaTareas.Client.dll": "sha256-Gfa1gSEH3na7paz9rjlGeJ+XZnYfsj\/SX1q5HPfywNg="
+      "ListaTareas.Client.dll": "sha256-QR4cw5bCjW4ZBsIWChYiHCVuNc2NQ1JatpoCjBKg0P8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "ListaTareas.Shared.pdb": "sha256-g6OJYIlIRdT7HACXbsXuqMu38emk3Fh+95WBLtFo2+g=",
-      "ListaTareas.Client.pdb": "sha256-MFqSBErMvL\/UlHq2TNRXTRlUuFMjAqqr5duS\/u04bFA="
+      "ListaTareas.Client.pdb": "sha256-4ImOWw\/eMvc\/di7zjZtE4gCoYTZeZS0b14lXMIEyHtE="
     },
     "runtime": {
       "dotnet.7.0.5.eqs19pya6r.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
