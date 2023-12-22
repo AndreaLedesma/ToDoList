@@ -17,14 +17,17 @@ builder.Services.AddDbContext<ToDoListContext>(options =>
 var app = builder.Build();
 
 //Migración al iniciar
+//Si ya se tiene información en la DB comentar esta region, de lo contrario se borran los datos
+#region Migración al ejecutar
 using (var scope = app.Services.CreateScope())
 {
     var dataContext = scope.ServiceProvider.GetRequiredService<ToDoListContext>();
     dataContext.Database.Migrate();
 }
+#endregion
 
-    // Configure the HTTP request pipeline.
-    if (app.Environment.IsDevelopment())
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
     {
         app.UseWebAssemblyDebugging();
 

@@ -1,4 +1,6 @@
-﻿.card.main {
+﻿
+
+.card.main {
     width: 100%;
     height: auto;
     min-height: 500px;
@@ -7,9 +9,6 @@
     background: #FAF3F0;
     box-shadow: 4px 3px 7px 2px #00000040;
     border-radius: 1rem;
-}
-.card-body {
-
 }
 
 .card-title {
@@ -32,6 +31,9 @@
         border: solid 3px transparent;
         border-bottom: dashed 4px #D4E2D4;
     }
+.form-check-input {
+    cursor: pointer
+}
 .form-check-input:checked {
     background-color: #AC87C5;
     border-color: #DBC4F0;
@@ -44,7 +46,7 @@
         text-decoration: line-through wavy #FFCACC;
     }
 
-    .btn {
+.btn {
     background: #E0AED0;
     border: none;
 }
@@ -67,4 +69,8 @@
 }
 .estado-tarea.completa {
     background: #89B9AD;
+}
+
+.btn i {
+    color: #FAF3F0;
 }

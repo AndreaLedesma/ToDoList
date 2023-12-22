@@ -1,4 +1,6 @@
 /* /Pages/ToDoList.razor.rz.scp.css */
+
+
 .card.main[b-5249uvr6z7] {
     width: 100%;
     height: auto;
@@ -8,9 +10,6 @@
     background: #FAF3F0;
     box-shadow: 4px 3px 7px 2px #00000040;
     border-radius: 1rem;
-}
-.card-body[b-5249uvr6z7] {
-
 }
 
 .card-title[b-5249uvr6z7] {
@@ -33,6 +32,9 @@
         border: solid 3px transparent;
         border-bottom: dashed 4px #D4E2D4;
     }
+.form-check-input[b-5249uvr6z7] {
+    cursor: pointer
+}
 .form-check-input:checked[b-5249uvr6z7] {
     background-color: #AC87C5;
     border-color: #DBC4F0;
@@ -45,7 +47,7 @@
         text-decoration: line-through wavy #FFCACC;
     }
 
-    .btn[b-5249uvr6z7] {
+.btn[b-5249uvr6z7] {
     background: #E0AED0;
     border: none;
 }
@@ -68,6 +70,10 @@
 }
 .estado-tarea.completa[b-5249uvr6z7] {
     background: #89B9AD;
+}
+
+.btn i[b-5249uvr6z7] {
+    color: #FAF3F0;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-c2t6o7me0g] {

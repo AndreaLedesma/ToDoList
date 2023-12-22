@@ -10,3 +10,17 @@ C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\
 C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\refint\ListaTareas.Shared.dll
 C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.pdb
 C:\Users\Desarrollo31\Documents\PruebaAndrea\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ref\ListaTareas.Shared.dll
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\bin\Debug\net7.0\ListaTareas.Shared.deps.json
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\bin\Debug\net7.0\ListaTareas.Shared.runtimeconfig.json
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\bin\Debug\net7.0\ListaTareas.Shared.dll
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\bin\Debug\net7.0\ListaTareas.Shared.pdb
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.csproj.AssemblyReference.cache
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.AssemblyInfoInputs.cache
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.AssemblyInfo.cs
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.csproj.CoreCompileInputs.cache
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.dll
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\refint\ListaTareas.Shared.dll
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.pdb
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ListaTareas.Shared.genruntimeconfig.cache
+C:\Users\dell 5490\Documents\c# ejercicios\ToDoList\ListaTareas\ListaTareas\Shared\obj\Debug\net7.0\ref\ListaTareas.Shared.dll

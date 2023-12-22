@@ -1,38 +1,166 @@
 ﻿@page "/"
 
+
+@inject IPeticionHTTP _peticionHttp
+@inject IJSRuntime JS
+
 <div class="card main" >
   <div class="card-body">
     <h5 class="card-title mb-4">Lista de tareas</h5>
         <div class="row">
             <div class="col-6">
-                <div class="mb-4 ">
-                    <label for="exampleInputEmail1" class="form-label">Título</label>
-                    <input type="text" class="form-control me-4" id="exampleInputPassword1">
-                </div>
-                <div class="mb-4 ">
-                    <label for="exampleInputEmail1" class="form-label">Fecha vencimiento</label>
-                    <input type="date" class="form-control me-4" id="exampleInputPassword1">
-                </div>
-                <div class="mb-4 ">
-                    <label for="exampleInputEmail1" class="form-label">Descripción</label>
-                    <input type="text" class="form-control me-4" id="exampleInputPassword1">
-                </div>
-                 <button type="submit" class="btn btn-primary">Añadir</button>
+                <EditForm Model="ModelTarea" OnValidSubmit="GuardarTarea">
+                    <ValidationSummary></ValidationSummary>
+                    <div class="mb-4 ">
+                        <label for="exampleInputEmail1" class="form-label">Título</label>
+                        <input @bind="ModelTarea.Titulo" type="text" class="form-control me-4">
+                        
+                    </div>
+                    <div class="mb-4 ">
+                        <label for="exampleInputEmail1" class="form-label">Fecha vencimiento</label>
+                        <input type="date" @bind="ModelTarea.FechaVencimiento" class="form-control me-4">
+                        <ValidationMessage For="@(() => ModelTarea.FechaVencimiento)"></ValidationMessage>
 
+                    </div>
+                    <div class="mb-4 ">
+                        <label for="exampleInputEmail1" class="form-label">Descripción</label>
+                        <input @bind="ModelTarea.Descripcion" class="form-control me-4" id="">
+                        <ValidationMessage For="@(() => ModelTarea.Descripcion)"></ValidationMessage>
+                    </div>
+                     <button type="submit" class="btn btn-primary">Añadir</button>
+                </EditForm>
             </div>
             <div class="col-6">
-                <div class="contenedor-tarea align-items-start mb-2">
-                    <div class="d-flex justify-content-start">
-                        <h5 class="titulo-tarea me-3">titulo tarea</h5>
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    </div>                        
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Fecha vencimiento</h6>
-                    <p class="card-text">Descripción</p>
-                    <span class="estado-tarea badge rounded-pill">pendiente</span>
-                </div>
+                @if(TareasGuardadas is null)
+                {
+                    <div class="contenedor-tarea align-items-start mb-2">
+                        <h5 class="titulo-tarea me-3">No hay tareas</h5>
+                    </div>
+                }
+                else
+                {
+                    @foreach(var tarea in TareasGuardadas)
+                    {
+                        <div class="contenedor-tarea align-items-start mb-2">
+                            <div class="d-flex justify-content-start">
+                                <input @bind="tarea.Estado" type="checkbox" @onclick="@(() => CambiarEstado(tarea.TareaID))" class="form-check-input me-3" />
+                                <h5 class="titulo-tarea me-3">@tarea.Titulo</h5>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">@tarea.FechaVencimiento.ToShortDateString()</h6>
+                            <p class="card-text">@tarea.Descripcion</p>
+                            <span class="@(tarea.Estado ? "estado-tarea completa" : "estado-tarea" ) badge rounded-pill me-2">@(tarea.Estado ? "completada" : "pendiente")</span>
+
+                            <button type="submit" class="btn-accion btn me-3" @onclick="(() => EditarTarea(tarea.TareaID))"><i class="bi bi-pencil-fill"></i>  </button>
+
+                            <button type="submit" class="btn-accion btn" @onclick="(() => EliminarTarea_Confirmar(tarea.TareaID))"><i class=" bi bi-trash-fill"> </i></button>
+                        </div>
+                    }
+                }
             </div>
         </div>
 
 
   </div>
 </div>
+
+@code{
+    /// <summary>
+    /// Modelo del formulario
+    /// </summary>
+    Tarea ModelTarea = new Tarea()
+    {
+        FechaVencimiento = DateTime.Now
+    };
+
+    /// <summary>
+    /// Bandera para especificar cuando
+    /// se esté editando una tarea
+    /// </summary>
+    private bool bEditarTarea;
+
+    string sMensajeAlerta;
+
+
+    List<Tarea>? TareasGuardadas = new List<Tarea>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        TareasGuardadas = await _peticionHttp.ObtenerTareas();
+    }
+
+    private async Task GuardarTarea()
+    {
+        if(!bEditarTarea)
+        {
+            sMensajeAlerta = await _peticionHttp.InsertarTarea(ModelTarea);
+            TareasGuardadas = await _peticionHttp.ObtenerTareas();
+        }
+        else
+        {
+            sMensajeAlerta = await _peticionHttp.EditarTarea_Id(ModelTarea.TareaID, ModelTarea);
+            bEditarTarea = false;
+        }
+        ModelTarea = new()
+        {
+            FechaVencimiento = DateTime.Now    
+        };
+        await AlertaMensaje();
+    }
+
+    private async Task EditarTarea(int Id)
+    {
+
+        var tarea = await _peticionHttp.ObtenerTarea_Id(Id);
+
+        if (tarea is not null)
+        {
+            ModelTarea = tarea;
+            bEditarTarea = true;
+            StateHasChanged();
+        }
+        else
+        {
+            sMensajeAlerta = "Error Ocurrió un error al obtener los datos de la tarea";
+            await AlertaMensaje();
+        }
+    }
+
+    private async Task CambiarEstado(int Id)
+    {
+        sMensajeAlerta = await _peticionHttp.EditarEstadoTarea_Id(Id);
+        TareasGuardadas = await _peticionHttp.ObtenerTareas();
+        await AlertaMensaje();
+
+    }
+
+    private async Task EliminarTarea_Confirmar(int Id)
+    {
+        await JS.InvokeVoidAsync("MensajeAlertaConfirmacion", DotNetObjectReference.Create(this), Id);
+    }
+
+    [JSInvokable]
+    public async Task EliminarTarea(int Id)
+    {
+        sMensajeAlerta = await _peticionHttp.EliminarTarea_Id(Id);
+        await AlertaMensaje();
+    }
+
+
+    private async Task AlertaMensaje()
+    {
+        if (sMensajeAlerta.Contains("Error"))
+            await JS.InvokeVoidAsync("ToastAlert","error", sMensajeAlerta);
+        else
+        {
+            await JS.InvokeVoidAsync("ToastAlert", "success", sMensajeAlerta);
+            TareasGuardadas = await _peticionHttp.ObtenerTareas();
+            StateHasChanged();
+        }
+    }
+
+    private async Task RecargarInformacion()
+    {
+
+    }
+}
