@@ -13,6 +13,7 @@
 
 #### Cliente
 - Los métodos del cliente se encuentran en: `ToDoList\ListaTareas\ListaTareas\Client\Services\srv_PeticionHTTP.cs`.
+- Ya que tenía dudas respecto al cambio de estado y la eliminación realicé los 2 métodos por si las dudas, para el cambio de estado es dando clic en el checkbox y eliminar el registro definitivamente es en el botón del trash icon.
 
 #### Modelo
 - El modelo está ubicado en: `ToDoList\ListaTareas\ListaTareas\Shared\ListaTareas.Shared.csproj`.
